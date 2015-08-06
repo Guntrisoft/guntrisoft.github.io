@@ -14,14 +14,26 @@
     body {
         background: url('data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="a" x="0" y="0"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="10" stitchTiles="stitch"/></filter><path fill="%23987030" d="M0 0h300v300H0z"/><path filter="url(%23a)" opacity=".4" d="M0 0h300v300H0z"/></svg>');
         padding: 0;
-        margin: 1rem 0 2rem 0;
+        margin: 0.5rem;
+    }
+
+    @media (min-width: 37.5em) {
+        body {
+           margin: 1rem 0 2rem 0;
+        }
     }
 
     article {
         max-width: 800px;
-        padding: 6rem;
+        padding: 1rem;
         margin: 0 auto;
         background: #fff;
+    }
+
+    @media (min-width: 37.5em) {
+        article {
+            padding: 6rem;
+        }
     }
 
     @media screen {
@@ -45,6 +57,7 @@
 
     a {
         color: #000;
+        word-break: break-all;
     }
 
     a:hover,
@@ -83,23 +96,29 @@
     }
 
     .contact dd {
-        display: inline;
-        margin: 0 0.3rem 0 0.3rem;
-        font-size: 1rem;
+        margin: 0;
     }
 
-    .contact dd:before {
-        content: " | ";
-        margin-right: 0.5rem;
-    }
+    @media (min-width: 37.5em) {
+        .contact dd {
+            display: inline;
+            margin: 0 0.3rem 0 0.3rem;
+            font-size: 1rem;
+        }
 
-    .contact dd:first-of-type {
-        margin-left: 0;
-    }
+        .contact dd:before {
+            content: " | ";
+            margin-right: 0.5rem;
+        }
 
-    .contact dd:first-of-type:before {
-        content: "";
-        margin-right: 0;
+        .contact dd:first-of-type {
+            margin-left: 0;
+        }
+
+        .contact dd:first-of-type:before {
+            content: "";
+            margin-right: 0;
+        }
     }
 
     .contact dt {
@@ -125,6 +144,7 @@
         }
     }
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <article>
