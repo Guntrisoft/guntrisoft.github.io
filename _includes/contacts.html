@@ -1,0 +1,30 @@
+<dl class="contact">
+  <dt>Telephone number</dt>
+  <dd>
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+      <use xlink:href="#telephone" />
+    </svg>
+    {{site.phoneNumber}}
+  </dd>
+  <dt>Email address</dt>
+  <dd>
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+      <use xlink:href="#email" />
+    </svg>
+    <a href="mailto:{{site.email}}">{{site.email}}</a>
+  </dd>
+  <dt>Twitter</dt>
+  <dd>
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+      <use xlink:href="#twitter" />
+    </svg>
+    <a href="{{site.twitterURL}}">{{site.twitterHandle}}</a>
+  </dd>
+  <dt>Linked In</dt>
+  <dd>
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg">
+      <use xlink:href="#linkedin" />
+    </svg>
+    <a href="{{site.linkedInURL}}">{{site.linkedInLinkText}}</a>
+  </dd>
+</dl>

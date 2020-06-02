@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include svg.html %}
+    <main role="main">
+      <article>
+        <h1>{{site.fullName}}</h1>
+
+        {% include contacts.html %}
+        {% include profile.html %}
+        {% include experience.html %}
+        {% include education.html %}
+        {% include references.html %}
+      </article>
+    </main>
+  </body>
+</html>
