@@ -48,13 +48,6 @@ article {
 
 a {
   color: #000;
-  word-break: break-all;
-}
-
-@media (min-width: 37em), print {
-  a {
-    word-break: normal;
-  }
 }
 
 a:hover,
@@ -215,8 +208,8 @@ dd ul {
 }
 
 @media print {
-  html {
-    font-size: 13px;
+  body {
+    margin: 0;
   }
 
   .experience a,
@@ -224,10 +217,11 @@ dd ul {
     text-decoration: none;
   }
 
-  /* .experience a::after,
+  .experience a::after,
   .profile a::after {
     content: " (" attr(href) ") ";
-  } */
+    color: #0000ee;
+  }
 
   .logo {
     display: none;
