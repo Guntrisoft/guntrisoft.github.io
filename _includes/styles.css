@@ -12,7 +12,7 @@ body {
   margin: 0.5rem;
 }
 
-article {
+.page {
   max-width: 800px;
   padding: 1rem;
   margin: 0 auto;
@@ -20,7 +20,7 @@ article {
 }
 
 @media all and (min-width: 37.5em), print {
-  article {
+  .page {
     padding: 4rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -28,18 +28,13 @@ article {
 }
 
 @media screen {
-  article {
+  .page {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.35);
   }
 }
 
-[data-page-break] {
-  page-break-before: always;
-}
-
 @page {
-  size: auto;
-  margin: 30mm 0mm 40mm 0mm;
+  size: 0;
 }
 
 @page :first {
@@ -212,15 +207,13 @@ dd ul {
     margin: 0;
   }
 
-  .experience a,
-  .profile a {
+  main a {
     text-decoration: none;
   }
 
-  .experience a::after,
-  .profile a::after {
+  main a::after {
     content: " (" attr(href) ") ";
-    color: #0000ee;
+    color: #127ea6;
   }
 
   .logo {
