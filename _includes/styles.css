@@ -64,8 +64,8 @@ a:focus {
 
 h1 {
   color: #127ea6;
-  margin: 0;
-  font-size: 1.8rem;
+  margin: 0 0 5px 0;
+  font-size: 2.2rem;
 }
 
 h2 {
@@ -221,7 +221,7 @@ dd ul {
   }
 }
 
-@media (min-width: 37.5em), print {
+@media (min-width: 37.5em) {
   .logo {
     float: right;
     margin: 0 0 1.5rem 1rem;
@@ -231,5 +231,19 @@ dd ul {
 @media print {
   html {
     font-size: 13px;
+  }
+
+  .experience a,
+  .profile a {
+    text-decoration: none;
+  }
+
+  /* .experience a::after,
+  .profile a::after {
+    content: " (" attr(href) ") ";
+  } */
+
+  .logo {
+    display: none;
   }
 }
