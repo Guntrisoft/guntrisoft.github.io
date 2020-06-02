@@ -211,6 +211,22 @@ dd ul {
   vertical-align: middle;
 }
 
+.skills {
+  padding: 0;
+  font-size: 0;
+  display: inline;
+}
+
+.skills li {
+  display: inline;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.skills li:not(:first-child):before {
+  content: ', ';
+}
+
 @media (min-width: 37.5em) {
   .logo {
     float: right;
