@@ -5,17 +5,19 @@
   </head>
   <body>
     {% include svg.html %}
-    <div class="page">
-      <header>
-        <h1>{{site.fullName}}</h1>
-        {% include contacts.html %}
-      </header>
-      <main role="main">
-        {% include profile.html %}
-        {% include experience.html %}
-        {% include education.html %}
-        {% include references.html %}
-      </main>
+    <div class="page-outer">
+      <div class="page">
+        <header>
+          <h1>{{site.fullName}}</h1>
+          {% include contacts.html %}
+        </header>
+        <main role="main">
+          {% include profile.html %}
+          {% include experience.html %}
+          {% include education.html %}
+          {% include references.html %}
+        </main>
+      </div>
     </div>
   </body>
 </html>

@@ -4,7 +4,7 @@ layout: default
 
 **Full stack web developer** specialising in front end development and accessibility.
 
-Experience including high profile projects for the BBC, Department of Work and Pensions, Honda, and TUI.
+Previous contracts include high profile projects for the BBC, Department of Work and Pensions, Honda, and TUI.
 
 ### Highlights
 
