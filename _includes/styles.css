@@ -273,12 +273,16 @@ dd ul {
     margin: 0;
   }
 
-  main a {
+  a {
+    color: #000;
     text-decoration: none;
   }
 
   main a::after {
-    content: " (" attr(href) ") ";
+    content: "(" attr(href) ")";
+    margin-left: 5px;
+    text-decoration: underline;
+    text-decoration-skip: edges;
   }
 
   .logo {
