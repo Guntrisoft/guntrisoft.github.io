@@ -10,7 +10,7 @@ html {
 body {
   padding: 0;
   margin: 0.5rem;
-  background: url('data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="a" x="0" y="0"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="10" stitchTiles="stitch"/></filter><path fill="%23c0c0c0" d="M0 0h300v300H0z"/><path filter="url(%23a)" opacity=".4" d="M0 0h300v300H0z"/></svg>');
+  background: #c0c0c0 url('data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="a" x="0" y="0"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="10" stitchTiles="stitch"/></filter><path fill="%23c0c0c0" d="M0 0h300v300H0z"/><path filter="url(%23a)" opacity=".4" d="M0 0h300v300H0z"/></svg>');
 }
 
 .page {
